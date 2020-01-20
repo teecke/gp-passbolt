@@ -1,0 +1,4 @@
+mysql.env
+passbolt.env
+docker-compose.yml
+/data
