@@ -1,0 +1,5 @@
+#!/bin/bash
+mkdir -p /var/backups/gp/passbolt/data/gpg \
+         /var/backups/gp/passbolt/data/images
+rsync -a --delete /var/www/passbolt/config/gpg/         /var/backups/gp/passbolt/data/gpg/
+rsync -a --delete /var/www/passbolt/webroot/img/public/ /var/backups/gp/passbolt/data/images/
