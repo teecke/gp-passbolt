@@ -9,7 +9,7 @@ Docker image and docker-compose sample configuration to bring up a Passbolt Serv
 The service is formed by two containers:
 
 - **passbolt**: based on [passbolt/passbolt](https://hub.docker.com/r/passbolt/passbolt) docker image.
-- **passboltdb**: based on [passbolt/passbolt](https://hub.docker.com/_/mariadb) databasse docker image.
+- **passboltdb**: based on [MariaDB](https://hub.docker.com/_/mariadb) databasse docker image.
 
 ## Operation
 
@@ -47,7 +47,7 @@ The service is formed by two containers:
 
 5. Start with `docker-compose up -d`.
 
-6. Open the url <http://localhost:10080> or <https://localhost:10443> in a browser to access to the Passbolt gui and complete the configuration.
+6. Open the url <https://localhost:10443> in a browser to access to the Passbolt gui and complete the configuration.
 
 7. Manage backups of your files:
 
