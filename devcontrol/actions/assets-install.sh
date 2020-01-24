@@ -23,7 +23,7 @@ function assets-install() {
     helpMessage=$(cat <<EOF
 Install nginx product assets:
 
-* Create the "data/usr/share/nginx/html" directory with all permissions (777)
+* Create the "data/passbolt/config/gpg" and "data/var/www/passbolt/webroot/img/public" directories  with all permissions (777)
 * Create the network "platform_services"
 EOF
 )

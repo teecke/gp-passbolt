@@ -41,21 +41,19 @@ The service is formed by two containers:
 
 2. Use the `docker-compose.yml.sample` file as your docker-compose configuration file.
 
-3. Create a docker network called "platform_services" before start the services with `docker network create platform_services`.
+3. Install assets with `devcontrol assets-install`.
 
-4. Create one directory called `data` to store the passbolt gpg and image data.
+4. Start with `docker-compose up -d`.
 
-5. Start with `docker-compose up -d`.
+5. Open the url <https://localhost:10443> in a browser to access to the Passbolt gui and complete the configuration.
 
-6. Open the url <https://localhost:10443> in a browser to access to the Passbolt gui and complete the configuration.
-
-7. Manage backups of your files:
+6. Manage backups of your files:
 
    1. Make a backup executing `docker-compose exec passbolt backup`.
    2. Find the current backup within the `/var/backups/gp/passbolt/` of the container.
    3. Extract the current backup executing `docker cp $(docker-compose ps -q passbolt):/var/backups/gp gp`.
 
-8. Stop the platform with `docker-compose stop`.
+7. Stop the platform with `docker-compose stop`.
 
 You should create the `admin` user following the [docker setup](https://help.passbolt.com/hosting/install/ce/docker.html) instructions
 

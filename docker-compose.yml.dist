@@ -11,8 +11,8 @@ services:
       - passboltdb:/var/lib/mysql
 
   passbolt:
-    image: teecke/gp-passbolt:0.1.0
-    context: passbolt
+    image: teecke/gp-passbolt:0.2.0
+    build: passbolt
     ports:
       - 10080:80
       - 10443:443
@@ -22,11 +22,11 @@ services:
     env_file:
       - passbolt.env
     volumes:
-      - ./data/gpg:/var/www/passbolt/config/gpg
-      - ./data/images:/var/www/passbolt/webroot/img/public
+      - ./data/passbolt/config/gpg:/var/www/passbolt/config/gpg
+      - ./data/var/www/passbolt/webroot/img/public:/var/www/passbolt/webroot/img/public
     tmpfs:
       - /run
-    command: ["/usr/bin/wait-for.sh", "db:3306", "--", "/docker-entrypoint.sh"]
+    command: ["/usr/bin/wait-for.sh", "db:3306", "-t", "60", "--", "/docker-entrypoint.sh"]
 
 networks:
     default:
