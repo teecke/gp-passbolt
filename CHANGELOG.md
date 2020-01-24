@@ -1,5 +1,27 @@
 # Changelog
 
+## v0.2.0 (2020-01-24)
+
+### New
+
+* Add assets install devcontrol task ([143d325](https://github.com/teecke/gp-passbolt/commit/143d325))
+
+### Update
+
+* Review devcontrol scripts ([1b4d27f](https://github.com/teecke/gp-passbolt/commit/1b4d27f))
+
+### Fix
+
+* Rename docker-compose file ([acc66a1](https://github.com/teecke/gp-passbolt/commit/acc66a1))
+
+### Build
+
+* Update Auto Release Log adding v0.2.0 info with JPL ([7afe2ee](https://github.com/teecke/gp-passbolt/commit/7afe2ee))
+
+### Docs
+
+* Generate v0.1.1 changelog with JPL ([acedc9d](https://github.com/teecke/gp-passbolt/commit/acedc9d))
+
 ## v0.1.1 (2020-01-21)
 
 ### Update
