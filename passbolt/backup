@@ -2,7 +2,7 @@
 
 set -eu
 
-mkdir -p /var/backups/gp/passbolt/var/www/passbolt/config/gpg/ \
+mkdir -p /var/backups/gp/passbolt/var/www/passbolt/config/gpg \
          /var/backups/gp/passbolt/var/www/passbolt/webroot/img/public
-rsync -a --relative --delete /var/www/passbolt/config/gpg/          /var/backups/gp/passbolt/var/www/passbolt/config/gpg/
-rsync -a --relative --delete /var/www/passbolt/webroot/img/public   /var/backups/gp/passbolt/var/www/passbolt/webroot/img/public
+rsync -a --delete /var/www/passbolt/config/gpg/          /var/backups/gp/passbolt/var/www/passbolt/config/gpg/
+rsync -a --delete /var/www/passbolt/webroot/img/public   /var/backups/gp/passbolt/var/www/passbolt/webroot/img/public
