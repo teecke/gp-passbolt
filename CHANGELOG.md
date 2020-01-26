@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.2.1 (2020-01-26)
+
+### Fix
+
+* Don't use --relative in backup script ([23c28dd](https://github.com/teecke/gp-passbolt/commit/23c28dd))
+
+### Build
+
+* Update Auto Release Log adding v0.2.1 info with JPL ([241996b](https://github.com/teecke/gp-passbolt/commit/241996b))
+
+### Docs
+
+* Generate v0.2.0 changelog with JPL ([4d48d53](https://github.com/teecke/gp-passbolt/commit/4d48d53))
+
 ## v0.2.0 (2020-01-24)
 
 ### New
