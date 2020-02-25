@@ -11,7 +11,7 @@ services:
       - passboltdb:/var/lib/mysql
 
   passbolt:
-    image: teecke/gp-passbolt:0.2.1
+    image: teecke/gp-passbolt:0.3.0
     build: passbolt
     ports:
       - 10080:80
