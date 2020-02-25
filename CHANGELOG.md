@@ -1,5 +1,24 @@
 # Changelog
 
+## v0.3.0 (2020-02-25)
+
+### Upgrade
+
+* Use passbolt/passbolt:2.12.0 as base image ([70f34e4](https://github.com/teecke/gp-passbolt/commit/70f34e4))
+
+### Update
+
+* Use next image tag in docker-compose file ([e36502a](https://github.com/teecke/gp-passbolt/commit/e36502a))
+
+### Build
+
+* Update Auto Release Log adding v0.3.0 info with JPL ([04e18be](https://github.com/teecke/gp-passbolt/commit/04e18be))
+* Use most generic gp pipeline ([6af2b98](https://github.com/teecke/gp-passbolt/commit/6af2b98))
+
+### Docs
+
+* Generate v0.2.1 changelog with JPL ([5776cbe](https://github.com/teecke/gp-passbolt/commit/5776cbe))
+
 ## v0.2.1 (2020-01-26)
 
 ### Fix
