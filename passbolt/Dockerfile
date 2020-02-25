@@ -1,4 +1,4 @@
-FROM passbolt/passbolt:2.11.0-debian
+FROM passbolt/passbolt:2.12.0-debian
 
 # Install packages
 RUN apt-get update && \
@@ -10,3 +10,6 @@ RUN apt-get update && \
 # Copy backup/cleanup scripts
 COPY backup /usr/local/bin/backup
 COPY cleanup /usr/local/bin/cleanup
+
+# GP service identification
+RUN echo "passbolt" > /gp.service
