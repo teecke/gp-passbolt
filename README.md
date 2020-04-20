@@ -1,6 +1,6 @@
 # DEPRECATED
 
-Please visit https://github.com/tpbtools/gp-passbolt/releases
+Please visit https://github.com/ayudadigital/gp-passbolt/releases
 
 # Generic Platform - Passbolt Service
 
